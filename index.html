@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ENR Practice Problem Generator</title>
+  
+		<meta charset="utf-8">
+	  	<title>Your page title here :)</title>
+	  	<meta name="description" content="">
+	  	<meta name="author" content="">
+
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<link rel="stylesheet" href="css/normalize.css">
+	  	<link rel="stylesheet" href="css/skeleton.css">
+	</head>
+	<body>
+		<div class="container">
+			<br />
+			<div class="row">
+				<div class="eight columns offset-by-two centre-text">
+					<h1 class="h4" style="margin-bottom: 0;">Electrical Networks & Resonance</h5>
+					<h1 class="h1">Practice Problem Generator</h2>
+				</div>
+			</div>	
+			
+			<br />
+
+			<div class="row">
+				<div class="eight columns offset-by-two">
+					<div id="question">
+						<h4 id="questionTitle" class="centre-text">Select a type of problem to begin</h4>
+						<img id="circuitDiagram" class="centre-image" />			
+						<p id="questionText" class="centre-text"></p>
+						<ul id="componentValues" class="centre-text"></ul>
+					</div>
+				</div>
+			</div>	
+
+			
+			<div class="row">
+				<div class="eight columns offset-by-two">
+					<div id="solutions" style="display: none;">
+						<button id="toggleFinalAnswer" class="u-full-width">Show/Hide Final Answer</button>
+						<div id="finalAnswerWrapper" class="centre-text">
+							<br />
+							<p id="finalAnswer"></p>
+							<hr />
+						</div>
+
+						<button id="toggleWorkedSolution" class="u-full-width">Show/Hide Worked Solution</button>
+						<div id="workedSolutionWrapper" class="centre-text">
+							<br />
+							<div id="workedSolution"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="eight columns offset-by-two">
+					<hr />
+					<div id="problemSelector"></div>
+				</div>
+			</div>
+
+			<br />
+
+		<script src="js/kirchhoff.js"></script>
+		<script src="js/superposition.js"></script>
+		<script src="js/thevenin.js"></script>
+		<script src="js/norton.js"></script>
+		<script src="js/mpt.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
