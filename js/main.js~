@@ -63,11 +63,12 @@ const listComponentValues = (componentValues) => {
 		
 		// Append units
 		const firstCharacter = componentValue.innerHTML.substr(0, 1);
+		const firstTwoCharacters = componentValue.innerHTML.substr(0, 2);
 		if(firstCharacter == "R") {
 			componentValue.innerHTML += "&#8486;";
 		} else if (firstCharacter == "V") {
 			componentValue.innerHTML += "V";
-		} else if (componentValue.innerHTML == "XC" || componentValue.innerHTML == "XL") {
+		} else if (firstTwoCharacters == "XC" || firstTwoCharacters == "XL") {
 			componentValue.innerHTML += "j&#8486;";
 		}
 

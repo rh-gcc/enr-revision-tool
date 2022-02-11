@@ -65,11 +65,13 @@
 			</div>
 
 			<br />
+		</div>
 
 		<script src="js/kirchhoff.js"></script>
 		<script src="js/superposition.js"></script>
-		<script src="js/mpt.js"></script>
+		<script src="js/thevenin.js"></script>
 		<script src="js/norton.js"></script>
+		<script src="js/mpt.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -8,12 +8,19 @@ const createKirchhoffProblem = () => {
 
 const generateKirchhoffComponents = () => {
 	return {
+		V1: 10,
+		V2: 5,
+		R1: 5,
+		R2: 9,
+		R3: 21
+	}
+	/*return {
 		V1: generateRandomInt(5, 25),
 		V2: generateRandomInt(5, 25),
 		R1: generateRandomInt(1, 50),
 		R2: generateRandomInt(1, 50),
 		R3: generateRandomInt(1, 50)
-	}
+	}*/
 }
 
 const solveKirchhoff = (componentValues) => {
@@ -27,7 +34,7 @@ const solveKirchhoff = (componentValues) => {
 	let loopOneI2Co = -componentValues["R2"];
 
 	const loopOne = document.createElement("p");
-	loopOne.innerHTML = "Loop ACDF: " + loopOneLHS + "V = " + loopOneI1Co + "I1 " + loopOneI2Co + "I2";
+	loopOne.innerHTML = "Loop ACDF: " + loopOneLHS + "V = " + loopOneI1Co + "I1 + " + loopOneI2Co + "I2";
 
 	// Loop 2
 	let loopTwoLHS = componentValues["V1"];
@@ -35,7 +42,7 @@ const solveKirchhoff = (componentValues) => {
 	let loopTwoI2Co = componentValues["R2"];
 
 	const loopTwo = document.createElement("p");
-	loopTwo.innerHTML = "Loop ABDF: " + loopTwoLHS + "V = " + loopTwoI1Co + "I1 " + loopTwoI2Co + "I2";
+	loopTwo.innerHTML = "Loop ABDF: " + loopTwoLHS + "V = " + loopTwoI1Co + "I1 + " + loopTwoI2Co + "I2";
 	
 	// Simulataneous equation
 	let multiplier = loopTwoI2Co / loopOneI2Co;
