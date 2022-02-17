@@ -12,7 +12,7 @@ const generateKirchhoffComponents = () => {
 		V2: 5,
 		R1: 5,
 		R2: 9,
-		R3: 21,
+		R3: 21
 	}
 	/*return {
 		V1: generateRandomInt(5, 25),

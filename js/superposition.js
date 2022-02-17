@@ -8,21 +8,13 @@ const createSuperpositionProblem = () => {
 
 const generateSuperpositionComponents = () => {
 	return {
-		V1: 10,
-		V2: 5,
-		R1: 5,
-		R2: 9,
-		R3: 21
-	}
-
-	/*return {
 		V1: generateRandomInt(5, 25),
 		V2: generateRandomInt(5, 25),
 		R1: generateRandomInt(1, 50),
 		R2: generateRandomInt(1, 50),
 		R3: generateRandomInt(1, 50)
 
-	}*/
+	}
 }
 
 
