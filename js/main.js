@@ -27,7 +27,7 @@ const questions = {
 	kirchhoff: {
 		questionId: "kirchhoff",
 		title: "Kirchhoff's Laws",
-		text: ["Determine the current flowing through R2 in the circuit shown using Kirchhoff's laws", "Using Kirchhoff's laws, find the current flowing through R2 in the circuit shown" ],
+		text: ["Determine the current flowing through R3 in the circuit shown using Kirchhoff's laws", "Using Kirchhoff's laws, find the current flowing through R3 in the circuit shown" ],
 		createProblem: () => { createKirchhoffProblem() }
 	},
 	superposition: {
